@@ -1,1 +1,2 @@
 Teaching students how to move our code to git.
+Changing 
