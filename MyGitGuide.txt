@@ -1,0 +1,57 @@
+
+All commands used for : from Local to Local Repository
+
+Install Git and Create one repository on your GitHub Account. Create one folder name as GitHubRepos on your local (laptop).
+Copy your repository from GitHub to your local Using command - git clone https://github.com/QA-AkanshuTyagi/8pmPlayWrightBatch20May2026
+Create one file on your local - ex. GitGuide.txt
+Check status of your local repository - Use command : git status 
+Add file - git add GitGuide.txt 
+Add all files - git add .
+************************************************************************************************
+
+From Local Repository to Staging 
+
+Send file from Local Repository to Staging :  git commit -m "any message regarding your file"
+You need to connect your GitHub account from local repository to staging.
+Command for connect GitHub: git config --global user.name "Aishu1222"
+                            git config --global user.email "aishumahadik.am@gmail.com"
+Transfer file from Local Repository to Staging :  git commit -m "any message regarding your file"
+************************************************************************************************
+
+From Staging to Github/ Remote Repository
+
+Command: git push
+Refresh your GitHub page and check.
+************************************************************************************************
+
+When you want to add on other people changes from GitHub to your local repository 
+Command: git pull
+************************************************************************************************
+
+Branch Concept:
+
+Create Branch on GitHub under your project repository by manually.
+On gitbash terminal check total branch: git branch 
+Local repository and GitHub for both you need to create branch with same branch name.
+Create branch on Local repository : git branch aishwarya
+Switch from main to your branch : git checkout aishwarya
+Create one file or code file on local repository branch aishwarya. This file you need to send on your GitHub branch aishwarya.
+Command: git status
+         git add . / git add "filename"
+         git commit -m "moving file from local repository branch to remote/github repository branch"
+         git push origin aishwarya
+         
+
+Goto the GitHub account open repository and check there is one notification. Click on compare and pull request button.
+Compare code and create PR.
+Under description box wright what exactly you did in the code.
+Click on create pull request button.
+After your TL will check your PR and approve it.
+After this your file/code will be present on main branch also.
+Automatically it will present on another branches also.
+If not then :
+
+Command: git checkout aishwarya
+         git merge origin/main
+         git push origin aishwarya
+
