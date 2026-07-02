@@ -1,8 +1,4 @@
-function display()
-{
-console.log("Hello World");
-}
-display();
+
 
 const displayArrow =()=>
     {
@@ -27,4 +23,8 @@ const performArrow =()=>
 }
 performArrow();
 
+const mathArrow =(m1,m2)=> m1*m2;
+console.log(mathArrow(10,20));
 
+const square =(m1)=> console.log("Square of " + m1 + " is " + m1*m1);
+square(4);

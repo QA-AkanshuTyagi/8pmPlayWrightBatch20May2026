@@ -35,6 +35,6 @@ function addition()
      add = n1(10) + n2(20);
     return add;
 }
-console.log(": Num1",n1(10));
-console.log(": Num2",n2(20));
-console.log(": Addition of Num1 and Num2",addition());
+console.log("Num1: ",n1(10));
+console.log("Num2: ",n2(20));
+console.log("Addition of Num1 and Num2: ",addition());
