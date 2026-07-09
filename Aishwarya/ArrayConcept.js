@@ -29,4 +29,7 @@ console.log(names.indexOf("Rohit"));
 console.log(names.includes("Ram"));
 console.log(names.includes("Aishu"));
 
+console.log(names);
 
+names.splice(0,2,"AARU");
+console.log(names);
