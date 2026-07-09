@@ -22,3 +22,13 @@ let bioData = {
 console.log(bioData.name[2]);
 console.log(bioData.age[1]);
 console.log(bioData.city[3]);
+
+
+let person = {
+    name: "Aishwarya", 
+    age: 22,
+    city: "Delhi",
+    pincode: 110001
+}
+
+console.log(person.name);

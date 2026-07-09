@@ -38,3 +38,17 @@ function addition()
 console.log("Num1: ",n1(10));
 console.log("Num2: ",n2(20));
 console.log("Addition of Num1 and Num2: ",addition());
+
+
+
+function print1(a,b)
+{
+    console.log(a+b);
+}
+print1(10,20);
+
+function print2(x,y)
+{
+    return x+y;
+}
+console.log(print2(5,5));
