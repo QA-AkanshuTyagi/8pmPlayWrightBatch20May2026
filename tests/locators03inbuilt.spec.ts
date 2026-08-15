@@ -19,6 +19,14 @@ test ('validating  Locators using Inbuilt Locators from Playwright concept 2',as
 await page.getByRole('radio',{name:'Male',exact:true}).click();
 await page.getByRole('checkbox',{name:'Tuesday',exact:true}).click();
 await page.getByRole('combobox',{name:'Country'}).selectOption('India');
-
-
 })
+
+//getbyrole
+// getbytext
+// getbylabel
+// getbyplaceholder
+// getbyalttext
+// getbytitle
+// getbytestid
+// getbydisplayvalue
+// getbyname
