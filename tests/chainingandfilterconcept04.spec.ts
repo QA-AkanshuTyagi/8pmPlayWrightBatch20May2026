@@ -15,7 +15,7 @@ const value=await page.locator("//td[.='Learn Selenium']/parent::tr/following::t
   const value=await page.locator("//tbody[@id='rows']").locator("//tr").nth(2).locator("//td").nth(2).textContent();
  
  console.log(value);
-
+//test case pass hora but result kuch aur aara .
 })
 
 test ('filter concept',async ({page})=>{
