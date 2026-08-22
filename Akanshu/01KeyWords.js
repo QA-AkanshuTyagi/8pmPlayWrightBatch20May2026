@@ -1,20 +1,17 @@
+function add() {
+  let a = 20;
+  a = 10;
+  var b = 20;
 
-
-function add(){
-   let a=20;
-     a=10;
-    var b=20;
-
-console.log(a);
+  console.log(a);
 }
 add();
 
-if(true){
-var name="akanshu";
+if (true) {
+  var name = "akanshu";
 
-var isMarried=false;
+  var isMarried = false;
 
-let country=null;
-
+  let country = null;
 }
 console.log(name);
