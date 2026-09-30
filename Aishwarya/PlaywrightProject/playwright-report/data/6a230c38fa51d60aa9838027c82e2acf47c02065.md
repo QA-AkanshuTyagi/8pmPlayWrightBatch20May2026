@@ -1,0 +1,390 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: FileUpload.spec.ts >>  Multiple File Upload Concept
+- Location: Aishwarya/PlaywrightProject/tests/FileUpload.spec.ts:8:5
+
+# Error details
+
+```
+Error: locator.setInputFiles: Error: Non-multiple file input can only accept single file
+Call log:
+  - waiting for getByRole('button', { name: 'file' })
+    - locator resolved to <input id="file" name="file" type="file" required="" class="file"/>
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - text: 
+  - generic [ref=e2]:
+    - link "Skip to main content" [ref=e3]:
+      - /url: "#content"
+    - banner [ref=e5]:
+      - generic [ref=e8]:
+        - img "GroTechMinds logo" [ref=e11]
+        - generic [ref=e12]:
+          - navigation "Menu" [ref=e15]:
+            - list [ref=e16]:
+              - listitem [ref=e17]:
+                - link "Home" [ref=e18]:
+                  - /url: https://grotechminds.com/
+              - listitem [ref=e19]:
+                - link "Courses" [ref=e20]:
+                  - /url: https://grotechminds.com/courses/
+              - listitem [ref=e21]:
+                - link "Blog" [ref=e22]:
+                  - /url: https://grotechminds.com/blogs/
+              - listitem [ref=e23]:
+                - link "Advancement" [ref=e24]:
+                  - /url: "#"
+                  - text: Advancement
+                  - img [ref=e26]
+              - listitem [ref=e28]:
+                - link "Students Corner" [ref=e29]:
+                  - /url: https://grotechminds.com/students-corner/
+              - listitem [ref=e30]:
+                - link "Contact Us" [ref=e31]:
+                  - /url: https://grotechminds.com/contact-us/
+          - navigation "Menu" [ref=e34]:
+            - list [ref=e35]:
+              - listitem [ref=e36]:
+                - 'link "{first_name}" [ref=e37]':
+                  - /url: "#"
+                  - text: "{first_name}"
+                  - img [ref=e39]
+          - navigation "Menu" [ref=e43]:
+            - list [ref=e44]:
+              - listitem [ref=e45]:
+                - link "Login" [ref=e46]:
+                  - /url: https://grotechminds.com/user-account/
+    - generic [ref=e60]:
+      - generic [ref=e62]:
+        - heading "Registration" [level=2] [ref=e65]
+        - generic [ref=e68]: As a part of this module you will be learning to automate different Text Fields Text Area fields Drop downs, file upload and Checking an element is selected or not
+      - generic [ref=e70]:
+        - generic [ref=e71]:
+          - generic [ref=e75]:
+            - text: Registration
+            - text: Form
+          - list [ref=e78]:
+            - listitem [ref=e79]:
+              - img [ref=e81]
+              - generic [ref=e83]: 1. Write a code to print your valid FirstName and Valid LastName
+            - listitem [ref=e84]:
+              - img [ref=e86]
+              - generic [ref=e88]: 2. Write a code to enter an invalid FirstName and Invalid LastName
+            - listitem [ref=e89]:
+              - img [ref=e91]
+              - generic [ref=e93]: 3. Write a code to upload Your CV in the Resume field in pdf format
+            - listitem [ref=e94]:
+              - img [ref=e96]
+              - generic [ref=e98]: 4. Write a code to check if "Are you ready to relocate to bangalore?" checkbox is selected or not
+            - listitem [ref=e99]:
+              - img [ref=e101]
+              - generic [ref=e103]: 5.Write a code to upload your CV in the Resume field in word format
+            - listitem [ref=e104]:
+              - img [ref=e106]
+              - generic [ref=e108]: 6. Write a code to upload a file in microsoft excel format.
+            - listitem [ref=e109]:
+              - img [ref=e111]
+              - generic [ref=e113]: 7. Write a code to upload a photo in Jpeg format and check if it is uploading
+            - listitem [ref=e114]:
+              - img [ref=e116]
+              - generic [ref=e118]: 8. Write a code to upload a photo in png format and check if it is uploading
+            - listitem [ref=e119]:
+              - img [ref=e121]
+              - generic [ref=e123]: 9. Write a code to check if usename is enabled or not if enabled type your username.
+            - listitem [ref=e124]:
+              - img [ref=e126]
+              - generic [ref=e128]: 10. Write a code to check if username is displayed or not and if displayed write username.
+        - generic [ref=e132]:
+          - generic [ref=e133]:
+            - textbox "First Name" [ref=e135]
+            - textbox "Last Name" [ref=e137]
+          - generic [ref=e138]:
+            - textbox "Email" [ref=e140]
+            - textbox "Password" [ref=e142]
+          - generic [ref=e143]:
+            - generic [ref=e145]:
+              - generic [ref=e146]:
+                - radio "Male" [ref=e147]
+                - generic [ref=e148]: Male
+              - generic [ref=e149]:
+                - radio "Female" [ref=e150]
+                - generic [ref=e151]: Female
+            - generic [ref=e153]:
+              - combobox [ref=e154]
+              - combobox "Select a Skill" [ref=e157] [cursor=pointer]:
+                - textbox "Select a Skill" [ref=e158]
+          - generic [ref=e159]:
+            - generic [ref=e160]:
+              - combobox "Selenium" [ref=e163] [cursor=pointer]:
+                - textbox "Selenium" [ref=e164]
+              - combobox "commerce" [ref=e167] [cursor=pointer]:
+                - textbox "commerce" [ref=e168]
+            - generic [ref=e171]:
+              - combobox [ref=e172]
+              - combobox "Select a Country" [ref=e175] [cursor=pointer]:
+                - textbox "Select a Country" [ref=e176]
+          - generic [ref=e177]:
+            - textbox "Present Address" [ref=e179]
+            - textbox "Permanent Address" [ref=e181]
+          - generic [ref=e182]:
+            - textbox "Pincode" [ref=e184]
+            - generic [ref=e187]:
+              - combobox [ref=e188]
+              - combobox "Select a Religion" [ref=e191] [cursor=pointer]:
+                - textbox "Select a Religion" [ref=e192]
+          - generic [ref=e193]:
+            - button "Choose File" [ref=e195]
+            - generic [ref=e197]:
+              - checkbox "Ready to relocate" [ref=e198]
+              - generic [ref=e199]: Ready to relocate
+          - button "Submit" [ref=e200] [cursor=pointer]
+      - generic [ref=e205]:
+        - generic [ref=e206]:
+          - img [ref=e209]
+          - img [ref=e212]
+          - img [ref=e215]
+          - img [ref=e218]
+          - img [ref=e221]
+          - img [ref=e224]
+          - img [ref=e227]
+          - img [ref=e230]
+        - generic [ref=e231]:
+          - generic [ref=e232]:
+            - img [ref=e235]
+            - img [ref=e238]
+            - img [ref=e241]
+            - img [ref=e244]
+            - img [ref=e247]
+            - img [ref=e250]
+            - img [ref=e253]
+            - img [ref=e256]
+          - generic [ref=e330]:
+            - img [ref=e333]
+            - img [ref=e336]
+            - img [ref=e339]
+            - img [ref=e342]
+            - img [ref=e345]
+            - img [ref=e348]
+            - img [ref=e351]
+            - img [ref=e354]
+        - generic [ref=e355]:
+          - img [ref=e358]
+          - img [ref=e361]
+          - img [ref=e364]
+          - img [ref=e367]
+          - img [ref=e370]
+          - img [ref=e373]
+          - img [ref=e376]
+          - img [ref=e379]
+  - generic [ref=e381]:
+    - generic [ref=e382]:
+      - generic [ref=e383]:
+        - img "GroTechMinds logo" [ref=e386]
+        - paragraph [ref=e391]: GroTechMinds is a well-known technical education platform working in the domain of Software Testing, Digital Marketing ,Software Development, Databases, Analytics, and Cloud Technologies, started with an aim to educate technical aspirants to gain knowledge, develop skills and build a successful career in the technology space.
+        - list [ref=e394]:
+          - listitem [ref=e395]:
+            - link "Facebook-f" [ref=e396] [cursor=pointer]:
+              - /url: https://www.facebook.com/grotechminds
+              - generic [ref=e397]: Facebook-f
+              - img [ref=e398]
+          - listitem [ref=e400]:
+            - link "Instagram" [ref=e401] [cursor=pointer]:
+              - /url: https://www.instagram.com/grotechminds/?hl=en
+              - generic [ref=e402]: Instagram
+              - img [ref=e403]
+          - listitem [ref=e405]:
+            - link "Twitter" [ref=e406] [cursor=pointer]:
+              - /url: https://twitter.com/grotechminds
+              - generic [ref=e407]: Twitter
+              - img [ref=e408]
+          - listitem [ref=e410]:
+            - link "Linkedin" [ref=e411] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/grotechminds/
+              - generic [ref=e412]: Linkedin
+              - img [ref=e413]
+          - listitem [ref=e415]:
+            - link "Youtube" [ref=e416] [cursor=pointer]:
+              - /url: https://www.youtube.com/channel/UCFwMXyyMSgZXVR7xcvYcwXQ
+              - generic [ref=e417]: Youtube
+              - img [ref=e418]
+      - generic [ref=e420]:
+        - generic [ref=e423]: Company
+        - navigation "Menu" [ref=e426]:
+          - list [ref=e427]:
+            - listitem [ref=e428]:
+              - link "About US" [ref=e429]:
+                - /url: https://grotechminds.com/about-us/
+            - listitem [ref=e430]:
+              - link "Blog" [ref=e431]:
+                - /url: https://grotechminds.com/blogs/
+            - listitem [ref=e432]:
+              - link "Contact Us" [ref=e433]:
+                - /url: https://grotechminds.com/contact-us/
+            - listitem [ref=e434]:
+              - link "Student Reviews" [ref=e435]:
+                - /url: https://grotechminds.com/reviews/
+      - generic [ref=e436]:
+        - generic [ref=e439]: Join with us
+        - navigation "Menu" [ref=e442]:
+          - list [ref=e443]:
+            - listitem [ref=e444]:
+              - link "Career" [ref=e445]:
+                - /url: https://grotechminds.com/career/
+            - listitem [ref=e446]:
+              - link "Job Portal" [ref=e447]:
+                - /url: https://grotechminds.com/software-testing-jobs/
+            - listitem [ref=e448]:
+              - link "Automate me" [ref=e449]:
+                - /url: https://grotechminds.com/automate-me/
+      - generic [ref=e450]:
+        - generic [ref=e453]: Valuable References
+        - navigation "Menu" [ref=e456]:
+          - list [ref=e457]:
+            - listitem [ref=e458]:
+              - link "Privacy Policy" [ref=e459]:
+                - /url: https://grotechminds.com/privacy-policy/
+            - listitem [ref=e460]:
+              - link "Referral Program" [ref=e461]:
+                - /url: https://grotechminds.com/privacy-policy/
+      - generic [ref=e462]:
+        - generic [ref=e464]:
+          - generic [ref=e467]: Get Our Application
+          - list [ref=e470]:
+            - listitem [ref=e471]:
+              - link "Get Android App" [ref=e472]:
+                - /url: https://play.google.com/store/search?q=grotechminds&c=apps&hl=en_IN
+                - img [ref=e474]
+                - generic [ref=e476]: Get Android App
+            - listitem [ref=e477]:
+              - link "Get IOS App" [ref=e478]:
+                - /url: https://apps.apple.com/in/app/grotechminds/id1634147593
+                - img [ref=e480]
+                - generic [ref=e482]: Get IOS App
+        - link "Explore Now" [ref=e488]:
+          - /url: https://grotechminds.com/courses/
+          - generic [ref=e490]: Explore Now
+    - generic [ref=e491]:
+      - generic [ref=e492]:
+        - generic [ref=e494]:
+          - generic [ref=e497]: Software testing Course
+          - navigation "Menu" [ref=e500]:
+            - list [ref=e501]:
+              - listitem [ref=e502]:
+                - link "AI-Powered Automation testing With Playwright & Java" [ref=e503]:
+                  - /url: https://grotechminds.com/
+              - listitem [ref=e504]:
+                - link "AI Automation Java Selenium and BDD Cucumber" [ref=e505]:
+                  - /url: https://grotechminds.com/courses/manual-testing/
+              - listitem [ref=e506]:
+                - link "AI-Powered API Automation Testing with RestAssured and Cucumber BDD Framework" [ref=e507]:
+                  - /url: https://grotechminds.com/courses/automation-testing/
+              - listitem [ref=e508]:
+                - link "AI-Powered Automation testing With Playwright & JavaScript/TypeScript" [ref=e509]:
+                  - /url: https://grotechminds.com/courses/selenium-webdriver-with-python-tutorial/
+              - listitem [ref=e510]:
+                - link "AI-Powered Data Science & Machine Learning Program with Generative AI" [ref=e511]:
+                  - /url: https://grotechminds.com/courses/manual-testing-course/
+              - listitem [ref=e512]:
+                - link "AI Integrated DevOps, AWS, Azure and Linux course" [ref=e513]:
+                  - /url: https://grotechminds.com/courses/full-stack-developer-training/
+              - listitem [ref=e514]:
+                - link "courses" [ref=e515]:
+                  - /url: https://grotechminds.com/courses/
+              - listitem [ref=e516]:
+                - link "Automate me" [ref=e517]:
+                  - /url: https://grotechminds.com/automate-me/
+          - generic [ref=e520]: Latest Blogs
+          - navigation "Menu" [ref=e523]:
+            - list [ref=e524]:
+              - listitem [ref=e525]:
+                - link "Event" [ref=e526]:
+                  - /url: https://grotechminds.com/event/
+              - listitem [ref=e527]:
+                - link "Workshop" [ref=e528]:
+                  - /url: https://grotechminds.com/workshop/
+              - listitem [ref=e529]:
+                - link "GroTechMinds Campus" [ref=e530]:
+                  - /url: https://grotechminds.com/grotechminds-campus/
+        - navigation "Menu" [ref=e533]:
+          - list [ref=e534]:
+            - listitem [ref=e535]:
+              - link "Terms and Conditions" [ref=e536]:
+                - /url: https://grotechminds.com/terms-and-conditions-2/
+            - listitem [ref=e537]:
+              - link "Privacy Policy" [ref=e538]:
+                - /url: https://grotechminds.com/privacy-policy/
+            - listitem [ref=e539]:
+              - link "Refund Policy" [ref=e540]:
+                - /url: https://grotechminds.com/refund-policy/
+      - generic [ref=e541]:
+        - generic [ref=e544]: CONTACT
+        - iframe [ref=e548]
+        - list [ref=e551]:
+          - listitem [ref=e552]:
+            - 'link "Tel: +91 8009900785" [ref=e553]':
+              - /url: tel:+91%208009900785
+              - img [ref=e555]
+              - generic [ref=e557]: "Tel: +91 8009900785"
+          - listitem [ref=e558]:
+            - link "contact@grotechminds.com" [ref=e559]:
+              - /url: mailto:contact@grotechminds.com
+              - img [ref=e561]
+              - generic [ref=e563]: contact@grotechminds.com
+    - paragraph [ref=e568]:
+      - text: 2022 © All Rights Reserved By
+      - link "GroTechMinds" [ref=e569]:
+        - /url: https://grotechminds.com/
+  - generic [ref=e574]:
+    - generic [ref=e575]: 
+    - generic [ref=e576]:
+      - generic [ref=e577]:
+        - generic [ref=e579]: Sign In
+        - generic [ref=e581]:
+          - textbox "Enter email or username" [ref=e583]
+          - generic [ref=e584]:
+            - textbox "Enter password" [ref=e585]
+            - generic [ref=e586]: 
+        - text:  
+        - generic [ref=e587]:
+          - generic [ref=e591]: Remember me
+          - link "Sign In" [ref=e592]:
+            - /url: "#"
+            - generic [ref=e593]: Sign In
+      - text:   
+      - generic [ref=e595]:
+        - generic [ref=e596]:
+          - generic [ref=e597]: No account?
+          - link "Sign Up" [ref=e598]:
+            - /url: "#"
+        - generic [ref=e599]: Lost Password?
+  - generic [ref=e600]: desktop
+```
+
+# Test source
+
+```ts
+  1  | import {test,expect,Locator} from '@playwright/test'
+  2  | test(' File Upload Concept' , async ({page})=>{
+  3  |     await page.goto('https://grotechminds.com/registration/');
+  4  |     const uploadfile: Locator = page.getByRole('button', {name:'file'});
+  5  |     await uploadfile.setInputFiles('/Users/aishwarya/GitHubRepos/8pmPlayWrightBatch20May2026/8pmPlayWrightBatch20May2026/Aishwarya/PlaywrightProject/tests/DataFiles/FileUpload.txt');
+  6  | }) 
+  7  | 
+  8  | test(' Multiple File Upload Concept' , async ({page})=>{
+  9  |     await page.goto('https://grotechminds.com/registration/');
+  10 |     const uploadfile: Locator = page.getByRole('button', {name:'file'});
+> 11 |     await uploadfile.setInputFiles(["/Users/aishwarya/GitHubRepos/8pmPlayWrightBatch20May2026/8pmPlayWrightBatch20May2026/Aishwarya/PlaywrightProject/tests/DataFiles/FileUpload.txt", "/Users/aishwarya/GitHubRepos/8pmPlayWrightBatch20May2026/8pmPlayWrightBatch20May2026/Aishwarya/PlaywrightProject/tests/DataFiles/file2.txt"]);
+     |     ^ Error: locator.setInputFiles: Error: Non-multiple file input can only accept single file
+  12 | }) 
+```
